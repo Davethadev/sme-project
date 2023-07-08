@@ -7,7 +7,7 @@ const Profile = () => {
   return (
     <main className="relative flex">
       <Aside />
-      <section className="bg-tin w-2/3 h-auto">
+      <section className="bg-tin w-3/4 h-auto">
         <div className="w-[708px] mx-auto pt-24 pb-20 relative">
           <h1 className="font-satoshi font-[600] text-xl italic">Profile</h1>
           <p className="font-satoshi font-[400] text-sm text-gray pt-4">

@@ -7,7 +7,7 @@ const AdditionalInfo = () => {
   return (
     <main className="relative flex">
       <Aside />
-      <section className="bg-tin w-2/3 h-auto">
+      <section className="bg-tin w-3/4 h-auto">
         <div className="w-[708px] mx-auto pt-24 pb-20 relative">
           <h1 className="font-satoshi font-[600] text-xl italic">Profile</h1>
           <p className="font-satoshi font-[400] text-sm text-gray pt-4">
@@ -118,14 +118,16 @@ const AdditionalInfo = () => {
                 />
               </label>
             </div>
-            <div className="mt-[148px] flex justify-end">
-              <button className="flex items-center justify-center gap-8 font-satoshi font-[500] bg-primary text-white w-[134px] h-[48px] rounded">
-                Save
-                <div>
-                  <img src={arrow} alt="" />
-                </div>
-              </button>
-            </div>
+            <Link to={"createproduct"}>
+              <div className="mt-[148px] flex justify-end">
+                <button className="flex items-center justify-center gap-8 font-satoshi font-[500] bg-primary text-white w-[134px] h-[48px] rounded">
+                  Save
+                  <div>
+                    <img src={arrow} alt="" />
+                  </div>
+                </button>
+              </div>
+            </Link>
           </form>
         </div>
       </section>

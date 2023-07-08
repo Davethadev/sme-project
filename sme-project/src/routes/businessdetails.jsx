@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const BusinessDetails = () => {
   return (
     <main className="relative flex">
-      <aside className="bg-white w-1/3 px-8 h-[100vh]">
+      <aside className="bg-white w-1/4 px-8 h-[100vh]">
         <div className="">
           <img src={logo} alt="" />
         </div>
@@ -35,12 +35,12 @@ const BusinessDetails = () => {
             </li>
           </ul>
 
-          <div className="absolute bottom-0 left-32 bottom-20">
+          <div className="absolute bottom-0 left-24 bottom-20">
             <img src={document} alt="" />
           </div>
         </div>
       </aside>
-      <section className="bg-tin w-2/3">
+      <section className="bg-tin w-3/4">
         <div className="w-[708px] mx-auto">
           <h1 className="font-satoshi italic font-[600] text-3xl text-black text-left pt-4">
             Business details

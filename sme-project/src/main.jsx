@@ -9,8 +9,11 @@ import MailSent from "./routes/mailsent";
 import Login from "./routes/login";
 import Profile from "./routes/profile";
 import AdditionalInfo from "./routes/additionalinfo";
+import CreateProduct from "./routes/createproduct";
+import Products from "./routes/products";
 // import Choose from "./routes/choose";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -48,6 +51,14 @@ const router = createBrowserRouter([
   {
     path: "/getstarted/businessdetails/personaldetails/mailsent/login/profile/additionalinfo",
     element: <AdditionalInfo />,
+  },
+  {
+    path: "/getstarted/businessdetails/personaldetails/mailsent/login/profile/additionalinfo/createproduct",
+    element: <CreateProduct />,
+  },
+  {
+    path: "/getstarted/businessdetails/personaldetails/mailsent/login/profile/additionalinfo/createproduct/products",
+    element: <Products />,
   },
 ]);
 
