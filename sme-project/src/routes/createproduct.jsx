@@ -110,7 +110,7 @@ const CreateProduct = () => {
                   }`}
                 ></div>
               </div>
-              <Link to={""}>
+              <Link to={"loans"}>
                 <div className="absolute right-0 top-[400px]">
                   <button className="flex items-center justify-center gap-8 font-satoshi font-[500] bg-primary text-white w-[217px] h-[48px] rounded">
                     Save Changes
@@ -143,12 +143,9 @@ const CreateProduct = () => {
             {products.map((product, index) => {
               const { image, name, type } = product;
               return (
-                <div>
+                <div key={index}>
                   <div className="w-[700px] h-[1px] bg-grey20"></div>
-                  <li
-                    className="flex items-center justify-between w-[70%] py-4"
-                    key={index}
-                  >
+                  <li className="flex items-center justify-between w-[70%] py-4">
                     <div className="flex items-center gap-4">
                       <div>
                         <img src={`/product-images/${image}`} alt="" />
@@ -175,6 +172,9 @@ const CreateProduct = () => {
               </button>
             </Link>
           </div>
+          {/* <div>
+            <Outlet />
+          </div> */}
         </div>
       </div>
     </main>

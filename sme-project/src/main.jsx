@@ -11,6 +11,9 @@ import Profile from "./routes/profile";
 import AdditionalInfo from "./routes/additionalinfo";
 import CreateProduct from "./routes/createproduct";
 import Products from "./routes/products";
+import Loans from "./routes/loans";
+import GetLoans from "./routes/getloans";
+import SwiftCash from "./routes/swiftcash";
 // import Choose from "./routes/choose";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -55,10 +58,23 @@ const router = createBrowserRouter([
   {
     path: "/getstarted/businessdetails/personaldetails/mailsent/login/profile/additionalinfo/createproduct",
     element: <CreateProduct />,
+    // children: [],
   },
   {
     path: "/getstarted/businessdetails/personaldetails/mailsent/login/profile/additionalinfo/createproduct/products",
     element: <Products />,
+  },
+  {
+    path: "/getstarted/businessdetails/personaldetails/mailsent/login/profile/additionalinfo/createproduct/loans",
+    element: <Loans />,
+  },
+  // {
+  //   path: "/getstarted/businessdetails/personaldetails/mailsent/login/profile/additionalinfo/createproduct/loans/getloans",
+  //   element: <GetLoans />,
+  // },
+  {
+    path: "/getstarted/businessdetails/personaldetails/mailsent/login/profile/additionalinfo/createproduct/loans/getloans",
+    element: <GetLoans />,
   },
 ]);
 
